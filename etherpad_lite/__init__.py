@@ -8,15 +8,17 @@
 
 from functools import partial
 import json
-try:
-    from urllib.request import urlopen
-    from urllib.parse import urlencode
-except ImportError:
+import sys
+if sys.hexversion < 0x3000000:
     from urllib2 import urlopen
     from urllib import urlencode
+else:
+    from urllib.request import urlopen
+    from urllib.parse import urlencode
 
 
-class EtherpadException(Exception): pass
+class EtherpadException(Exception):
+    pass
 
 
 class EtherpadLiteClient(object):

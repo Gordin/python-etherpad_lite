@@ -1,3 +1,5 @@
+This is a fork from http://changaco.net/gitweb/?p=python-etherpad_lite.git
+
 Etherpad Lite is a web service that allows real-time document collaboration for groups of users. http://etherpad.org/
 
 python-etherpad_lite provides an interface for Etherpad-Lite's HTTP API.

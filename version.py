@@ -8,6 +8,7 @@ from subprocess import CalledProcessError, check_output
 
 version_re = re.compile('^Version: (.+)$', re.M)
 
+
 def get_version():
     d = dirname(__file__)
 
